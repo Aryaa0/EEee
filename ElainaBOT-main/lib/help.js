@@ -2,323 +2,316 @@ const fs = require('fs-extra')
 
 const help = (prefix, cts, pendaftar) => {
     return `
-╔══✪〘 INFORMATION 〙✪══
-║
-╠➥ ELAINA BOT
-╠➥ 3.0
-╠➥ CREATOR : TOBZ
-╠➥ wa.me/6281311850715
-╠➥ ${pendaftar.length} User Registered
-║
-╠══✪〘 LIST MENU 〙✪══
-║
-╠➥ *${prefix}ownermenu*
-╠➥ *${prefix}adminmenu*
-╠➥ *${prefix}groupmenu*
-╠➥ *${prefix}praymenu*
-╠➥ *${prefix}nsfwmenu*
-╠➥ *${prefix}funmenu*
-╠➥ *${prefix}mediamenu*
-╠➥ *${prefix}animemenu*
-╠➥ *${prefix}kerangmenu*
-╠➥ *${prefix}downloadmenu*
-╠➥ *${prefix}othermenu*
-║
-╠══✪〘 OTHER 〙✪══
-║
-╠➥ *cekpprefix*
-╠➥ *${prefix}setprefix*
-╠➥ *${prefix}daftar |nama|umur*
-╠➥ *${prefix}bugreport [teks]*
-╠➥ *${prefix}listblock*
-╠➥ *${prefix}listbanned*
-╠➥ *${prefix}listgroup*
-╠➥ *${prefix}iklan*
-╠➥ *${prefix}runtime*
-╠➥ *${prefix}info*
-╠➥ *${prefix}limit*
-╠➥ *${prefix}snk*
-╠➥ *${prefix}readme*
-╠➥ *${prefix}donate*
-╠➥ *${prefix}ping*
-╠➥ *${prefix}elainagroup*
-╠➥ *${prefix}elainaadmin*
-╠➥ *${prefix}owner*
-║
-╠══✪〘 RUNTIME 〙✪══
-║
-╠➥ WAKTU AKTIF :
-╠➥ ${cts}
-║
-╚═〘 ELAINA BOT 〙
+▀▄▀▄▀▄ ❖ INFORMATION ❖ ▄▀▄▀▄▀
+
+🔰 *Aryaa* 🔰
+🔰 *YT: https://www.youtube.com/channel/UCHRluTI8HBF0nyEDcZMBHFw* 🔰
+🔰 *CREATOR : Aryaa* 🔰
+🔰 *wa.me/6285961559037* 🔰
+
+▀▄▀▄▀▄ ❖ LIST MENU ❖ ▄▀▄▀▄▀
+
+✦ *${prefix}ownermenu*
+✦ *${prefix}adminmenu*
+✦ *${prefix}groupmenu*
+✦ *${prefix}praymenu*
+✦ *${prefix}nsfwmenu*
+✦ *${prefix}funmenu*
+✦ *${prefix}mediamenu*
+✦ *${prefix}animemenu*
+✦ *${prefix}kerangmenu*
+✦ *${prefix}downloadmenu*
+✦ *${prefix}othermenu*
+
+▀▄▀▄▀▄ ❖ OTHER ❖ ▄▀▄▀▄▀
+
+✦ *${prefix}setprefix*
+✦ *${prefix}bugreport [teks]*
+✦ *${prefix}listblock*
+✦ *${prefix}listbanned*
+✦ *${prefix}listgroup*
+✦ *${prefix}iklan*
+✦ *${prefix}runtime*
+✦ *${prefix}info*
+✦ *${prefix}snk*
+✦ *${prefix}readme*
+✦ *${prefix}donate*
+✦ *${prefix}owner*
+
+▀▄▀▄▀▄ ❖ RUNTIME ❖ ▄▀▄▀▄▀
+
+✦ WAKTU AKTIF :
+✦ ${cts}
+
+▀▄▀▄▀▄ ❖ BotAryaa ❖ ▄▀▄▀▄▀
 `
 }
 exports.help = help
 const ownercmd = (prefix) => {
     return `
-╔══✪〘 OWNER 〙✪══
-║
-╠➥ *${prefix}block 62858xxxxx*
-╠➥ *${prefix}unblock 62858xxxxx*
-╠➥ *${prefix}addadmin @tagmember*
-╠➥ *${prefix}deladmin @tagmember*
-╠➥ *${prefix}restart*
-╠➥ *${prefix}ekickall*
-╠➥ *${prefix}banchat*
-╠➥ *${prefix}unbanchat*
-╠➥ *${prefix}setname [teks]*
-╠➥ *${prefix}setstatus [teks]*
-╠➥ *${prefix}setprofilepic*
-╠➥ *${prefix}eval [kode JavaScript]*
-║
-╚═〘 ELAINA BOT 〙`
+▀▄▀▄▀▄ ❖ OWNER ❖ ▄▀▄▀▄▀
+
+✦ *${prefix}block 62858xxxxx*
+✦ *${prefix}unblock 62858xxxxx*
+✦ *${prefix}addadmin @tagmember*
+✦ *${prefix}deladmin @tagmember*
+✦ *${prefix}restart*
+✦ *${prefix}ekickall*
+✦ *${prefix}banchat*
+✦ *${prefix}unbanchat*
+✦ *${prefix}setname [teks]*
+✦ *${prefix}setstatus [teks]*
+✦ *${prefix}setprofilepic*
+✦ *${prefix}eval [kode JavaScript]*
+
+▀▄▀▄▀▄ ❖ BotAryaa ❖ ▄▀▄▀▄▀`
 }
 exports.ownercmd = ownercmd
 const admincmd = (prefix) => {
     return `
-╔══✪〘 ADMIN 〙✪══
-║
-╠➥ *${prefix}mute*
-╠➥ *${prefix}unmute*
-╠➥ *${prefix}ban @tagmember*
-╠➥ *${prefix}gift @tagmember jumlah*
-╠➥ *${prefix}unban @tagmember*
-╠➥ *${prefix}daftarulang @tagmember umur*
-╠➥ *${prefix}spamcall [81273xxxx]*
-╠➥ *${prefix}addbadword [text]*
-╠➥ *${prefix}delbadword [text]*
-╠➥ *${prefix}listbadword [text]*
-╠➥ *${prefix}resetsticker @tagmember*
-╠➥ *${prefix}resetbadword @tagmember*
-╠➥ *${prefix}kickall*
-╠➥ *${prefix}oleave*
-╠➥ *${prefix}opromote*
-╠➥ *${prefix}odemote*
-╠➥ *${prefix}odelete*
-╠➥ *${prefix}oadd 62813xxxxx*
-╠➥ *${prefix}okickall*
-╠➥ *${prefix}otagall*
-║
-╚═〘 ELAINA BOT 〙`
+▀▄▀▄▀▄ ❖ ADMIN ❖ ▄▀▄▀▄▀
+
+✦ *${prefix}mute*
+✦ *${prefix}unmute*
+✦ *${prefix}ban @tagmember*
+✦ *${prefix}gift @tagmember jumlah*
+✦ *${prefix}unban @tagmember*
+✦ *${prefix}daftarulang @tagmember umur*
+✦ *${prefix}spamcall [81273xxxx]*
+✦ *${prefix}addbadword [text]*
+✦ *${prefix}delbadword [text]*
+✦ *${prefix}listbadword [text]*
+✦ *${prefix}resetsticker @tagmember*
+✦ *${prefix}resetbadword @tagmember*
+✦ *${prefix}kickall*
+✦ *${prefix}oleave*
+✦ *${prefix}opromote*
+✦ *${prefix}odemote*
+✦ *${prefix}odelete*
+✦ *${prefix}oadd 62813xxxxx*
+✦ *${prefix}okickall*
+✦ *${prefix}otagall*
+
+▀▄▀▄▀▄ ❖ BotAryaa ❖ ▄▀▄▀▄▀`
 }
 exports.admincmd = admincmd
 const nsfwcmd = (prefix) => {
     return `
-╔══✪〘 NSFW 〙✪══
-║
-╠➥ *${prefix}randombokep
-╠➥ *${prefix}randomhentai*
-╠➥ *${prefix}randomnsfwneko*
-╠➥ *${prefix}randomtrapnime*
-╠➥ *${prefix}nhentai [kode]*
-╠➥ *${prefix}nhder [kode]*
-╠➥ *${prefix}xnxx [linkXnxx]*
-║
-╚═〘 ELAINA BOT 〙`
+▀▄▀▄▀▄ ❖ NSFW ❖ ▄▀▄▀▄▀
+
+✦ *${prefix}randombokep
+✦ *${prefix}randomhentai*
+✦ *${prefix}randomnsfwneko*
+✦ *${prefix}randomtrapnime*
+✦ *${prefix}nhentai [kode]*
+✦ *${prefix}nhder [kode]*
+✦ *${prefix}xnxx [linkXnxx]*
+
+▀▄▀▄▀▄ ❖ BotAryaa ❖ ▄▀▄▀▄▀`
 }
 exports.nsfwcmd = nsfwcmd
 const praycmd = (prefix) => {
     return `
-╔══✪〘 PRAY 〙✪══
-║
-╠➥ *${prefix}quran [urutan surah]*
-╠➥ *${prefix}infosurah [nama surah]*
-╠➥ *${prefix}tafsir [nama surah] [ayat]*
-╠➥ *${prefix}jadwalsholat [daerah]*
-╠➥ *${prefix}listsurah*
-╠➥ *${prefix}listdaerah*
-║
-╚═〘 ELAINA BOT 〙`
+▀▄▀▄▀▄ ❖ PRAY ❖ ▄▀▄▀▄▀
+
+✦ *${prefix}quran [urutan surah]*
+✦ *${prefix}infosurah [nama surah]*
+✦ *${prefix}tafsir [nama surah] [ayat]*
+✦ *${prefix}jadwalsholat [daerah]*
+✦ *${prefix}listsurah*
+✦ *${prefix}listdaerah*
+
+▀▄▀▄▀▄ ❖ BotAryaa ❖ ▄▀▄▀▄▀`
 }
 exports.praycmd = praycmd
 const kerangcmd = (prefix) => {
     return `
-╔══✪〘 KERANG 〙✪══
-║
-╠➥ *${prefix}apakah [optional]*
-╠➥ *${prefix}rate* [optional]*
-╠➥ *${prefix}bisakah* [optional]*
-╠➥ *${prefix}kapankah* [optional]*
-║
-╚═〘 ELAINA BOT 〙`
+▀▄▀▄▀▄ ❖ KERANG ❖ ▄▀▄▀▄▀
+
+✦ *${prefix}apakah [optional]*
+✦ *${prefix}rate* [optional]*
+✦ *${prefix}bisakah* [optional]*
+✦ *${prefix}kapankah* [optional]*
+
+▀▄▀▄▀▄ ❖ BotAryaa ❖ ▄▀▄▀▄▀`
 }
 exports.kerangcmd = kerangcmd
 const funcmd = (prefix) => {
     return `
-╔══✪〘 FUN 〙✪══
-║
-╠➥ *${prefix}caklontong*
-╠➥ *${prefix}family100*
-╠➥ *${prefix}tebakgambar*
-╠➥ *${prefix}cerpen*
-╠➥ *${prefix}puisi1*
-╠➥ *${prefix}puisi2*
-╠➥ *${prefix}puisi3*
-╠➥ *${prefix}glitch [|teks1|teks2]*
-╠➥ *${prefix}lovemessage [teks]*
-╠➥ *${prefix}romance [teks]*
-╠➥ *${prefix}party [teks]*
-╠➥ *${prefix}silk [teks]*
-╠➥ *${prefix}thunder [teks]*
-╠➥ *${prefix}blackpink [teks]*
-╠➥ *${prefix}pornhub [|teks1|teks2]*
-╠➥ *${prefix}magernulis1 [teks]*
-╠➥ *${prefix}ramalpasangan [kamu|pasangan]*
-╠➥ *${prefix}zodiak* [zodiak kamu]
-╠➥ *${prefix}artinama [nama]*
-╠➥ *${prefix}artinama [nama]*
-╠➥ *${prefix}artimimpi [mimpi]*
-╠➥ *${prefix}heroml [nama hero]*
-╠➥ *${prefix}nulis [teks]*
-╠➥ *${prefix}sandwriting [teks]*
-╠➥ *${prefix}quotemaker [|teks|author|theme]*
-║
-╚═〘 ELAINA BOT 〙
+▀▄▀▄▀▄ ❖ FUN ❖ ▄▀▄▀▄▀
+
+✦ *${prefix}caklontong*
+✦ *${prefix}family100*
+✦ *${prefix}tebakgambar*
+✦ *${prefix}cerpen*
+✦ *${prefix}puisi1*
+✦ *${prefix}puisi2*
+✦ *${prefix}puisi3*
+✦ *${prefix}glitch [|teks1|teks2]*
+✦ *${prefix}lovemessage [teks]*
+✦ *${prefix}romance [teks]*
+✦ *${prefix}party [teks]*
+✦ *${prefix}silk [teks]*
+✦ *${prefix}thunder [teks]*
+✦ *${prefix}blackpink [teks]*
+✦ *${prefix}pornhub [|teks1|teks2]*
+✦ *${prefix}magernulis1 [teks]*
+✦ *${prefix}ramalpasangan [kamu|pasangan]*
+✦ *${prefix}zodiak* [zodiak kamu]
+✦ *${prefix}artinama [nama]*
+✦ *${prefix}artinama [nama]*
+✦ *${prefix}artimimpi [mimpi]*
+✦ *${prefix}heroml [nama hero]*
+✦ *${prefix}nulis [teks]*
+✦ *${prefix}sandwriting [teks]*
+✦ *${prefix}quotemaker [|teks|author|theme]*
+
+▀▄▀▄▀▄ ❖ BotAryaa ❖ ▄▀▄▀▄▀
 `
 }
 exports.funcmd = funcmd
 const mediacmd = (prefix) => {
     return `
-╔══✪〘 MEDIA 〙✪══
-║
-╠➥ *${prefix}newstickerline*
-╠➥ *${prefix}news*
-╠➥ *${prefix}jadwalbola [query]*
-╠➥ *${prefix}distance [query]*
-╠➥ *${prefix}covid [negara]*
-╠➥ *${prefix}jadwalTv [channel]*
-╠➥ *${prefix}cuaca [tempat]*
-╠➥ *${prefix}resepmasakan [optional]*
-╠➥ *${prefix}tts [kode bhs] [teks]*
-╠➥ *${prefix}igstalk [@username]*
-╠➥ *${prefix}tiktokstalk [@username]*
-╠➥ *${prefix}smulestalk [@username]*
-╠➥ *${prefix}kbbi [query]*
-╠➥ *${prefix}wiki [query]*
-╠➥ *${prefix}shopee [query]*
-╠➥ *${prefix}google [query]*
-╠➥ *${prefix}pinterest [query]*
-╠➥ *${prefix}playstore [query]*
-╠➥ *${prefix}googleimage [query]*
-╠➥ *${prefix}brainlysearch [query]*
-╠➥ *${prefix}ytsearch [query]*
-╠➥ *${prefix}translate [bahasa] [teks]*
-╠➥ *${prefix}brainly [pertanyaan] [.jumlah]*
-╠➥ *${prefix}lirik [optional]*
-╠➥ *${prefix}chord [optional]*
-╠➥ *${prefix}qrcode [optional]*
-╠➥ *${prefix}maps [optional]*
-╠➥ *${prefix}textmaker [teks1|teks2]*
-╠➥ *${prefix}checkip [ipaddress]*
-╠➥ *${prefix}ssweb [linkWeb]*
-╠➥ *${prefix}shorturl [linkWeb]*
-║
-╚═〘 ELAINA BOT 〙`
+▀▄▀▄▀▄ ❖ MEDIA ❖ ▄▀▄▀▄▀
+
+✦ *${prefix}newstickerline*
+✦ *${prefix}news*
+✦ *${prefix}jadwalbola [query]*
+✦ *${prefix}distance [query]*
+✦ *${prefix}covid [negara]*
+✦ *${prefix}jadwalTv [channel]*
+✦ *${prefix}cuaca [tempat]*
+✦ *${prefix}resepmasakan [optional]*
+✦ *${prefix}tts [kode bhs] [teks]*
+✦ *${prefix}igstalk [@username]*
+✦ *${prefix}tiktokstalk [@username]*
+✦ *${prefix}smulestalk [@username]*
+✦ *${prefix}kbbi [query]*
+✦ *${prefix}wiki [query]*
+✦ *${prefix}shopee [query]*
+✦ *${prefix}google [query]*
+✦ *${prefix}pinterest [query]*
+✦ *${prefix}playstore [query]*
+✦ *${prefix}googleimage [query]*
+✦ *${prefix}brainlysearch [query]*
+✦ *${prefix}ytsearch [query]*
+✦ *${prefix}translate [bahasa] [teks]*
+✦ *${prefix}brainly [pertanyaan] [.jumlah]*
+✦ *${prefix}lirik [optional]*
+✦ *${prefix}chord [optional]*
+✦ *${prefix}qrcode [optional]*
+✦ *${prefix}maps [optional]*
+✦ *${prefix}textmaker [teks1|teks2]*
+✦ *${prefix}checkip [ipaddress]*
+✦ *${prefix}ssweb [linkWeb]*
+✦ *${prefix}shorturl [linkWeb]*
+
+▀▄▀▄▀▄ ❖ BotAryaa ❖ ▄▀▄▀▄▀`
 }
 exports.mediacmd = mediacmd
 const animecmd = (prefix) => {
     return `
-╔══✪〘 ANIME 〙✪══
-║
-╠➥ *${prefix}loli*
-╠➥ *${prefix}shota*
-╠➥ *${prefix}waifu*
-╠➥ *${prefix}husbu*
-╠➥ *${prefix}randomNekoNime*
-╠➥ *${prefix}randomTrapNime*
-╠➥ *${prefix}randomAnime*
-╠➥ *${prefix}quotesnime*
-╠➥ *${prefix}wait*
-╠➥ *${prefix}koin*
-╠➥ *${prefix}maluser [username]*
-╠➥ *${prefix}malanime [query]*
-╠➥ *${prefix}malcharacter [query]*
-╠➥ *${prefix}kusonime [query]*
-╠➥ *${prefix}neonime [query]*
-╠➥ *${prefix}dewabatch [query]*
-╠➥ *${prefix}komiku [query]*
-╠➥ *${prefix}animesearch [query]*
-║
-╚═〘 ELAINA BOT 〙`
+▀▄▀▄▀▄ ❖ ANIME ❖ ▄▀▄▀▄▀
+
+✦ *${prefix}loli*
+✦ *${prefix}shota*
+✦ *${prefix}waifu*
+✦ *${prefix}husbu*
+✦ *${prefix}randomNekoNime*
+✦ *${prefix}randomTrapNime*
+✦ *${prefix}randomAnime*
+✦ *${prefix}quotesnime*
+✦ *${prefix}wait*
+✦ *${prefix}koin*
+✦ *${prefix}maluser [username]*
+✦ *${prefix}malanime [query]*
+✦ *${prefix}malcharacter [query]*
+✦ *${prefix}kusonime [query]*
+✦ *${prefix}neonime [query]*
+✦ *${prefix}dewabatch [query]*
+✦ *${prefix}komiku [query]*
+✦ *${prefix}animesearch [query]*
+
+▀▄▀▄▀▄ ❖ BotAryaa ❖ ▄▀▄▀▄▀`
 }
 exports.animecmd = animecmd
 const othercmd = (prefix) => {
     return `
-╔══✪〘 OTHER 〙✪══
-║
-╠➥ *${prefix}bahasa*
-╠➥ *${prefix}sticker*
-╠➥ *${prefix}stickergif*
-╠➥ *${prefix}sfire*
-╠➥ *${prefix}slightning*
-╠➥ *${prefix}ttp [teks]*
-╠➥ *${prefix}stickertoimg*
-╠➥ *${prefix}neko*
-╠➥ *${prefix}pokemon*
-╠➥ *${prefix}inu*
-╠➥ *${prefix}infoGempa*
-╠➥ *${prefix}quotes*
-╠➥ *${prefix}ptl*
-╠➥ *${prefix}dadu*
-╠➥ *${prefix}koin*
-╠➥ *${prefix}quoterandom*
-╠➥ *${prefix}wa.me*
-║
-╚═〘 ELAINA BOT 〙`
+▀▄▀▄▀▄ ❖ OTHER ❖ ▄▀▄▀▄▀
+
+✦ *${prefix}bahasa*
+✦ *${prefix}sticker*
+✦ *${prefix}stickergif*
+✦ *${prefix}sfire*
+✦ *${prefix}slightning*
+✦ *${prefix}ttp [teks]*
+✦ *${prefix}stickertoimg*
+✦ *${prefix}neko*
+✦ *${prefix}pokemon*
+✦ *${prefix}inu*
+✦ *${prefix}infoGempa*
+✦ *${prefix}quotes*
+✦ *${prefix}ptl*
+✦ *${prefix}dadu*
+✦ *${prefix}koin*
+✦ *${prefix}quoterandom*
+✦ *${prefix}wa.me*
+
+▀▄▀▄▀▄ ❖ BotAryaa ❖ ▄▀▄▀▄▀`
 }
 exports.othercmd = othercmd
 const downloadcmd = (prefix) => {
     return `
-╔══✪〘 DOWNLOADER 〙✪══
-║
-╠➥ *${prefix}gdrive [linkGDrive]*
-╠➥ *${prefix}ytmp3 [linkYt]*
-╠➥ *${prefix}ytmp4 [linkYt]*
-╠➥ *${prefix}ig [linkIg]*
-╠➥ *${prefix}fb [linkFb]*
-╠➥ *${prefix}twitter [linkTwitter]*
-╠➥ *${prefix}smule [linkSmule]*
-╠➥ *${prefix}tiktok [linkTiktok]*
-╠➥ *${prefix}starmaker [linkStarmaker]*
-╠➥ *${prefix}xnxx [linkXnxx]*
-╠➥ *${prefix}nhder [kodeNuclear]*
-╠➥ *${prefix}joox [lagu]*
-╠➥ *${prefix}play [lagu]*
-╠➥ *${prefix}music [lagu]*
-╠➥ *${prefix}getmusic [IdDownload]*
-╠➥ *${prefix}video [video]*
-╠➥ *${prefix}getvideo [IdDownload]*
-║
-╚═〘 ELAINA BOT 〙`
+▀▄▀▄▀▄ ❖ DOWNLOADER ❖ ▄▀▄▀▄▀
+
+✦ *${prefix}gdrive [linkGDrive]*
+✦ *${prefix}ytmp3 [linkYt]*
+✦ *${prefix}ytmp4 [linkYt]*
+✦ *${prefix}ig [linkIg]*
+✦ *${prefix}fb [linkFb]*
+✦ *${prefix}twitter [linkTwitter]*
+✦ *${prefix}smule [linkSmule]*
+✦ *${prefix}tiktok [linkTiktok]*
+✦ *${prefix}starmaker [linkStarmaker]*
+✦ *${prefix}xnxx [linkXnxx]*
+✦ *${prefix}nhder [kodeNuclear]*
+✦ *${prefix}joox [lagu]*
+✦ *${prefix}play [lagu]*
+✦ *${prefix}music [lagu]*
+✦ *${prefix}getmusic [IdDownload]*
+✦ *${prefix}video [video]*
+✦ *${prefix}getvideo [IdDownload]*
+
+▀▄▀▄▀▄ ❖ BotAryaa ❖ ▄▀▄▀▄▀`
 }
 exports.downloadcmd = downloadcmd
 const groupcmd = (prefix) => {
     return `
-╔══✪〘 GROUP 〙✪══
-║
-╠➥ *${prefix}snk*
-╠➥ *${prefix}wame*
-╠➥ *${prefix}groupinfo*
-╠➥ *${prefix}add 62858xxxxx*
-╠➥ *${prefix}kick @tagmember*
-╠➥ *${prefix}promote @tagmember*
-╠➥ *${prefix}demote @tagadmin*
-╠➥ *${prefix}tagall*
-╠➥ *${prefix}adminList*
-╠➥ *${prefix}ownerGroup*
-╠➥ *${prefix}leave*
-╠➥ *${prefix}delete [replyChatBot]*
-╠➥ *${prefix}kickAll*
-╠➥ *${prefix}group [open|close]*
-╠➥ *${prefix}NSFW [enable|disable]*
-╠➥ *${prefix}left [enable|disable]*
-╠➥ *${prefix}welcome [enable|disable]*
-╠➥ *${prefix}simi [enable|disable]*
-╠➥ *${prefix}antisticker [enable|disable]*
-╠➥ *${prefix}antilink [enable|disable]*
-╠➥ *${prefix}antibadword [enable|disable]*
-║
-╚═〘 ELAINA BOT 〙`
+▀▄▀▄▀▄ ❖ GROUP ❖ ▄▀▄▀▄▀
+
+✦ *${prefix}snk*
+✦ *${prefix}wame*
+✦ *${prefix}groupinfo*
+✦ *${prefix}add 62858xxxxx*
+✦ *${prefix}kick @tagmember*
+✦ *${prefix}promote @tagmember*
+✦ *${prefix}demote @tagadmin*
+✦ *${prefix}tagall*
+✦ *${prefix}adminList*
+✦ *${prefix}ownerGroup*
+✦ *${prefix}leave*
+✦ *${prefix}delete [replyChatBot]*
+✦ *${prefix}kickAll*
+✦ *${prefix}group [open|close]*
+✦ *${prefix}NSFW [enable|disable]*
+✦ *${prefix}left [enable|disable]*
+✦ *${prefix}welcome [enable|disable]*
+✦ *${prefix}simi [enable|disable]*
+✦ *${prefix}antisticker [enable|disable]*
+✦ *${prefix}antilink [enable|disable]*
+✦ *${prefix}antibadword [enable|disable]*
+
+▀▄▀▄▀▄ ❖ BotAryaa ❖ ▄▀▄▀▄▀`
 }
 exports.groupcmd = groupcmd
 const readme = (prefix) => {
@@ -415,21 +408,21 @@ Contoh : *${prefix}checkip 182.0.144.145*`
 exports.readme = readme
 const info = () => {
     return `
-╔══✪〘 INFORMATION 〙✪══
-║
-╠➥ *BOT TYPE : NODEJS V14*
-╠➥ *NAME : ELAINA BOT*
-╠➥ *VERSION : 3.0*
-╠➥ *GITHUB : github.com/TobyG74*
-╠➥ *TEAM : @TEAINSIDE*
-║
-╚═〘 ELAINA BOT 〙
+▀▄▀▄▀▄ ❖ INFORMATION ❖ ▄▀▄▀▄▀
+
+✦ *BOT TYPE : NODEJS V14*
+✦ *NAME : BotAryaa*
+✦ *VERSION : 3.0*
+✦ *GITHUB : github.com/TobyG74*
+✦ *TEAM : @TEAINSIDE*
+
+▀▄▀▄▀▄ ❖ BotAryaa ❖ ▄▀▄▀▄▀
 `
 }
 
 exports.info = info
 const snk = () => {
-    return `Syarat dan Ketentuan Bot *ELAINA*
+    return `Syarat dan Ketentuan BotAryaa
 1. Teks dan nama pengguna WhatsApp anda akan kami simpan di dalam server selama bot aktif
 2. Data anda akan di hapus ketika bot Offline
 3. Kami tidak menyimpan gambar, video, file, audio, dan dokumen yang anda kirim
@@ -442,44 +435,28 @@ Thanks !`
 exports.snk = snk
 const sewa = () => {
     return `
-╔══✪〘 IKLAN 〙✪══
-║
-╠═══════════════════════════
-╠➥ *DAFTAR SEWA & BUAT BOT :*
-╠➥ *SEWA : 25K/GRUP (BULAN)*
-╠➥ *BUAT : 100K (BISA JADI OWNER)*
-╠➥ *PEMBAYARAN BISA MELALUI :*
-╠➥ *OVO, PAYPAL, DANA, PULSA +5K*
-╠═══════════════════════════
-╠➥ *KEUNTUNGAN SEWA BOT :*
-╠➥ *1. BISA MENJADI ADMIN ELAINA*
-╠➥ *2. BISA MENDAPATKAN COMMAND ADMIN*
-╠➥ *KEUNTUNGAN BUAT BOT :*
-╠➥ *1. BISA MENJADI OWNER BOT SENDIRI*
-╠➥ *2. BISA MENGGANTI NAMA BOT SENDIRI*
-╠➥ *3. BISA MEMBAWA BOT KE GROUP*
-╠➥ *4. BISA MENGGUNAKAN COMMAND OWNER*
-╠➥ *5. BISA MENYEWAKAN BOT KEMBALI*
-╠═══════════════════════════
-╠➥ *JIKA MINAT IKLAN DIATAS*
-╠➥ *HARAP HUBUNGI NOMOR DIBAWAH :*
-╠➥ *wa.me/6281311850715*
-║
-╚═〘 ELAINA BOT 〙
+▀▄▀▄▀▄ ❖ IKLAN ❖ ▄▀▄▀▄▀
+
+-
+
+▀▄▀▄▀▄ ❖ BotAryaa ❖ ▄▀▄▀▄▀
 `
 }
 exports.sewa = sewa
 const sumbang = () => {
     return `
-╔══✪〘 DONATE 〙✪══
-║
-╠➥ *DONASI BISA MELALUI :*
-╠➥ *DANA/PULSA/OVO : 081311850715*
-╠➥ *PAYPAL : tobyprogamerz@gmail.com*
-╠➥ *SAWERIA : saweria.co/ItzTobz*
-╠➥ *TERIMA KASIH BANYAK YANG SUDAH MAU DONASI*
-║
-╚═〘 ELAINA BOT 〙
+▀▄▀▄▀▄ ❖ Donasi ❖ ▄▀▄▀▄▀
+
+👑❦ ════ •⊰❂ - ❂⊱• ════ ❦👑
+
+✦ *DONASI BISA MELALUI :*
+✦ *DANA/PULSA/OVO : 087877032231*
+✦ *SAWERIA : https://saweria.co/Arya05*
+✦ *TERIMA KASIH BANYAK YANG SUDAH MAU DONASI*
+
+👑❦ ════ •⊰❂ - ❂⊱• ════ ❦👑
+
+✦  ❍BotAryaa❍
 `
 }
 exports.sumbang = sumbang
